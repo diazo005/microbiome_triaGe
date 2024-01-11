@@ -25,7 +25,7 @@ The script requires 3 items:
 1. Copy the **microbiome_triaGe.R** script and the **parameters.csv** files to your working directory.
 2. Copy your phyloseq object saved as **.rds** file to your working directory (more on how to build phyloseq objects: https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
 
-       You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
+   You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
 4. Modify **parameters.csv** file as follows:
     - Column 1: Name of the project
     - Column 2: Specify dataset type. Write either *16S* or *shotgun*, for 16S rRNA sequencing or Shotgun Metagenomic sequencing. 
