@@ -44,6 +44,7 @@ The script requires 3 items:
 6. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
 
    For example:
+
    ![alt text](/figures/Microbiome3.png "The address is in light green")
 
 ## Output
@@ -51,6 +52,7 @@ The script will output 4 types of files:
 1.	Relative abundance plots stratified by time and treatment variable (png files at 300dpi resolution).
 
   	Something like this:
+
   	![alt text](/figures/Microbiome4.png "Relative abundance plots example")
 3.	Alpha diversity indices plotted as boxplots, stratified by time and treatment variable (png files at 300dpi resolution).
 
@@ -59,10 +61,13 @@ The script will output 4 types of files:
 5.	Beta diversity plots stratified by time and treatment variable (png files at 300dpi resolution).
 
   	Something like this:
+
   	![alt text](/figures/Microbiome6.png "Relative abundance plots example")
 7.	Metadata of the microbiome dataset with the alpha indices calculated added to it (csv file).
 
-  	Something like this: ![alt text](/figures/Microbiome7.png "Relative abundance plots example")
+  	Something like this:
+
+  	![alt text](/figures/Microbiome7.png "Relative abundance plots example")
 
 Please note that a relative abundance table of top taxa will be produced in the viewer of RStudio. Also, all these output items will be located in the working directory provided as an address in the parameter file.
 You may find your working directory populated with the plots. 
