@@ -13,8 +13,17 @@ The script requires the installation of the following packages:
 - microbiome
 
 *The script accepts **.rds** files as input and **.csv** files as parameters.*
+  
 
 ## How to use it
+1. Copy the **microbiome_triaGe.R** script and the **parameters.csv** files to your working directory.
+2. Copy your phyloseq object saved as **.rds** file to your working directory (more on how to build phyloseq objects: https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
+   You should have something like this: ![alt text for screen readers](/figures/Microbiome1.png "Text to show on mouseover")
+   
+    You should have something like this: ![alt text for screen readers](/figures/Microbiome1.png "Text to show on mouseover")
+   
+4. asd
+5.  
 ### Input
 The script requires 3 items:
 - **Parameters file:** A csv file that requires the (1) name of the project in the 1st column; (2) the dataset type in the 2nd column (either ‘16S’ or ‘shotgun’); (3) the phyloseq object name as rds file in the 3rd column (e.g., my_ps_object.rds) ; (4) the taxonomic ranks in which the user wants to analyze the data (they need to be introduced with the first capital letter and comma without spaces. E.g., Phylum,Order,Genus) in the 4th column; (5) the working directory address where the input files are standing and the output files will be stored, in the 5th column; (6) the name of the column in the dataset that has the time variable, in the 6th column; (7) the name of the column in the dataset that has the treatment variable, in the 7th column (figure 1).
