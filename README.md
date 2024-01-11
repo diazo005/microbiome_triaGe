@@ -12,7 +12,7 @@ The script requires the installation of the following packages:
 - table1
 - microbiome
 
-*The script accepts **.rds** files as input and **.csv** files as parameters.*
+*The script accepts \_**.rds**\_ files as input and **.csv** files as parameters.*
 
 ## How to use it
 ### Input
