@@ -1,8 +1,8 @@
-# Title: Explore_microbiome_Diaz.R
+# Title: microbiome_triaGe.R
 # Description: Script to preliminary explore a microbiome dataset from a longitudinal study
 # Author: Gerardo R Diaz
 # Date: 12/15/23
-# sidenote (How to save ps_object as rds): saveRDS(ps_object, 'ps.long.rds')
+# sidenote (How to save ps_object as rds): saveRDS(myPS, 'myPS.rds')
 # Load parameters: CHANGE THE LOCATION OF YOUR PARAMETER FILE
 params <- read.csv('/Users/gerardodiaz/Desktop/Gerardo/UMN/PhD/1 Fall 2023/CSCI5465_Computing Biology/Final project/parameters.csv')
 
