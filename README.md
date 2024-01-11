@@ -71,7 +71,9 @@ The script will output 4 types of files:
 
 Please note that a relative abundance table of top taxa will be produced in the viewer of RStudio. Also, all these output items will be located in the working directory provided as an address in the parameter file.
 You may find your working directory populated with the plots. 
+
 Something like this: 
+
 ![alt text](/figures/Microbiome8.png "The address is in light green")
 
 ## But...How does the script work?
