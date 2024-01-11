@@ -24,7 +24,7 @@ The script requires 3 items:
 ## How to use it
 1. Copy the **microbiome_triaGe.R** script and the **parameters.csv** files to your working directory.
 2. Copy your phyloseq object saved as **.rds** file to your working directory (more on how to build phyloseq objects: https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
-    You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
+   You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
 3. Modify **parameters.csv** file as follows:
     - Column 1: Name of the project
     - Column 2: Specify dataset type. Write either *16S* or *shotgun*, for 16S rRNA sequencing or Shotgun Metagenomic sequencing. 
@@ -35,7 +35,7 @@ The script requires 3 items:
     - Column 7: Write the name of the column that contains the variable of interest in your dataset. In other words your treatment variable name.
     Here is an example of how to fill it: ![alt text](/figures/Microbiome2.png "You may have something like this!")
 4. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
-     For example: ![alt text](/figures/Microbiome3.png "The address is in light green")
+   For example: ![alt text](/figures/Microbiome3.png "The address is in light green")
 
 ## Output
 The script will output 4 types of files:
@@ -51,7 +51,7 @@ The script will output 4 types of files:
 Please note that a relative abundance table of top taxa will be produced in the viewer of RStudio. Also, all these output items will be located in the working directory provided as an address in the parameter file.
 You may find your working directory populated with the plots. Something like this: ![alt text](/figures/Microbiome8.png "The address is in light green")
 
-### But...How does the script work?
+## But...How does the script work?
 The script will conduct 5 tasks: 
 1.	Load info: It will load the R packages required to work and will set the working directory, read the phyloseq object as rds file, and read the time and treatment variables names for plotting.
 2.	Data formatting: It will subset only Bacteria and archaea from the microbiome dataset, normalize the data by the Cumulative Sum Scaling (CSS) method, and agglomerate the data to the taxonomic ranks that the user specified in the parameters.csv file for plotting. 
