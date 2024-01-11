@@ -1,6 +1,7 @@
 # microbiome_triaGe
 R script for microbiome data visualization 
 The goal of this project is to develop a convenient R Script for an initial visual exploration of animal microbiome data from **longitudinal studies**. It will provide researchers with crucial microbiome plots to develop intuition of the data patterns present in their datasets and guide their further statistical analysis. 
+
 Questions: diazo005@umn.edu (Gerardo R Diaz)
 
 ## Package and data types 
@@ -38,6 +39,7 @@ The script requires 3 items:
     - Column 7: Write the name of the column that contains the variable of interest in your dataset. In other words your treatment variable name.
     
    Here is an example of how to fill it:
+
    ![alt text](/figures/Microbiome2.png "You may have something like this!")
 6. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
 
