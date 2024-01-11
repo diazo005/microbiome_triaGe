@@ -26,7 +26,7 @@ The script requires 3 items:
 2. Copy your phyloseq object saved as **.rds** file to your working directory (more on how to build phyloseq objects: https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
 
    You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
-4. Modify **parameters.csv** file as follows:
+3. Modify **parameters.csv** file as follows:
     - Column 1: Name of the project
     - Column 2: Specify dataset type. Write either *16S* or *shotgun*, for 16S rRNA sequencing or Shotgun Metagenomic sequencing. 
     - Column 3: Write the name of your phyloseq object saved as .rds file. For instance, *ps.long.rds* or *ps.rds*.
@@ -34,23 +34,30 @@ The script requires 3 items:
     - Column 5: Write the address for your working directory using the forward slash. Something like this: */Path/to/my/working/directory*
     - Column 6: Write the name of the column that contains the timepoints in your dataset. In other words your time variable name.
     - Column 7: Write the name of the column that contains the variable of interest in your dataset. In other words your treatment variable name.
-    Here is an example of how to fill it: ![alt text](/figures/Microbiome2.png "You may have something like this!")
-5. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
+    
+   Here is an example of how to fill it: ![alt text](/figures/Microbiome2.png "You may have something like this!")
+4. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
+
    For example: ![alt text](/figures/Microbiome3.png "The address is in light green")
 
 ## Output
 The script will output 4 types of files:
 1.	Relative abundance plots stratified by time and treatment variable (png files at 300dpi resolution).
-    Something like this: ![alt text](/figures/Microbiome4.png "Relative abundance plots example")
-2.	Alpha diversity indices plotted as boxplots, stratified by time and treatment variable (png files at 300dpi resolution).
-    Something like this: ![alt text](/figures/Microbiome5.png "Relative abundance plots example")
-3.	Beta diversity plots stratified by time and treatment variable (png files at 300dpi resolution).
-    Something like this: ![alt text](/figures/Microbiome6.png "Relative abundance plots example")
-4.	Metadata of the microbiome dataset with the alpha indices calculated added to it (csv file).
-    Something like this: ![alt text](/figures/Microbiome7.png "Relative abundance plots example")
+
+  	Something like this: ![alt text](/figures/Microbiome4.png "Relative abundance plots example")
+3.	Alpha diversity indices plotted as boxplots, stratified by time and treatment variable (png files at 300dpi resolution).
+
+  	Something like this: ![alt text](/figures/Microbiome5.png "Relative abundance plots example")
+5.	Beta diversity plots stratified by time and treatment variable (png files at 300dpi resolution).
+
+  	Something like this: ![alt text](/figures/Microbiome6.png "Relative abundance plots example")
+7.	Metadata of the microbiome dataset with the alpha indices calculated added to it (csv file).
+
+  	Something like this: ![alt text](/figures/Microbiome7.png "Relative abundance plots example")
 
 Please note that a relative abundance table of top taxa will be produced in the viewer of RStudio. Also, all these output items will be located in the working directory provided as an address in the parameter file.
-You may find your working directory populated with the plots. Something like this: ![alt text](/figures/Microbiome8.png "The address is in light green")
+You may find your working directory populated with the plots. 
+Something like this: ![alt text](/figures/Microbiome8.png "The address is in light green")
 
 ## But...How does the script work?
 The script will conduct 5 tasks: 
