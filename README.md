@@ -24,8 +24,8 @@ The script requires 3 items:
 ## How to use it
 1. Copy the **microbiome_triaGe.R** script and the **parameters.csv** files to your working directory.
 2. Copy your phyloseq object saved as **.rds** file to your working directory (more on how to build phyloseq objects: https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
-   You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
-3. Modify **parameters.csv** file as follows:
+       You should have something like this: ![alt text](/figures/Microbiome1.png "You need 3 files in your working directory!")
+4. Modify **parameters.csv** file as follows:
     - Column 1: Name of the project
     - Column 2: Specify dataset type. Write either *16S* or *shotgun*, for 16S rRNA sequencing or Shotgun Metagenomic sequencing. 
     - Column 3: Write the name of your phyloseq object saved as .rds file. For instance, *ps.long.rds* or *ps.rds*.
@@ -34,7 +34,7 @@ The script requires 3 items:
     - Column 6: Write the name of the column that contains the timepoints in your dataset. In other words your time variable name.
     - Column 7: Write the name of the column that contains the variable of interest in your dataset. In other words your treatment variable name.
     Here is an example of how to fill it: ![alt text](/figures/Microbiome2.png "You may have something like this!")
-4. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
+5. Modify **microbiome_triaGe.R** script: Write in line 7 the address where your **parameters.csv** is located.
    For example: ![alt text](/figures/Microbiome3.png "The address is in light green")
 
 ## Output
